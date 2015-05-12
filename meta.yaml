@@ -3,7 +3,7 @@ package:
   version: !!str dev
 
 source:
-  git: https://github.com/pandegroup/openmm.git
+  git_url: https://github.com/pandegroup/openmm.git
 
   patches:
     # remove this after the first release (6.2.1 or 6.3.0) in which
