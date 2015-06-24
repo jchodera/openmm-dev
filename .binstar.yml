@@ -38,7 +38,7 @@ engine:
 ## Run before the script
 before_script:
   - echo "before_script!"
-  - sudo apt-get install -qq swig doxygen llvm-3.3
+  - apt-get install -qq swig doxygen llvm-3.3
 ## Put your main computations here!
 script:
   - echo "This is my binstar build!"
