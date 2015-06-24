@@ -43,7 +43,7 @@ script:
 # - conda install --yes --quiet conda-build jinja2
   - conda update --quiet --yes -n root conda-build
   - conda config --add channels https://conda.binstar.org/omnia
-  - conda build --quiet openmm-dev
+  - conda build --quiet .
 ## This will run after the script regardless of the result of script
 ## BINSTAR_BUILD_RESULT=[succcess|failure]
 # after_script:
