@@ -21,9 +21,12 @@ platform:
 # - linux-32
 ## The engine are the inital conda packages you want to run with
 engine:
- - python=2
- - python=3
+ - python=2.7
+ - python=3.3
+ - python=3.4
 ## The env param is an environment variable list
+env:
+ - CXX=clang++
 # env:
 #  - MY_ENV=A CC=gcc
 #  - MY_ENV=B
