@@ -38,12 +38,12 @@ engine:
 ## Run before the script
 before_script:
   - echo "before_script!"
-  - apt-get install -qq swig doxygen llvm-3.3
 ## Put your main computations here!
 script:
   - echo "This is my binstar build!"
 # - conda install --yes --quiet conda-build jinja2
   - conda update --quiet --yes -n root conda-build
+  - conda update --quiet --yes llvm
   - conda config --add channels https://conda.binstar.org/omnia
   - conda build --quiet .
 ## This will run after the script regardless of the result of script
