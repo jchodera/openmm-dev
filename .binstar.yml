@@ -43,7 +43,7 @@ script:
   - echo "This is my binstar build!"
 # - conda install --yes --quiet conda-build jinja2
   - conda update --quiet --yes -n root conda-build
-  - conda update --quiet --yes llvm
+  - conda install --quiet --yes -c https://conda.binstar.org/anaconda llvm
   - conda config --add channels https://conda.binstar.org/omnia
   - conda build --quiet .
 ## This will run after the script regardless of the result of script
