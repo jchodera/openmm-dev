@@ -25,8 +25,6 @@ engine:
  - python=3.3
  - python=3.4
 ## The env param is an environment variable list
-env:
- - CXX=clang++
 # env:
 #  - MY_ENV=A CC=gcc
 #  - MY_ENV=B
@@ -38,8 +36,9 @@ env:
 #===============================================================================
 
 ## Run before the script
-# before_script:
-#   - echo "before_script!"
+before_script:
+  - echo "before_script!"
+  - sudo apt-get install -qq swig doxygen llvm-3.3
 ## Put your main computations here!
 script:
   - echo "This is my binstar build!"
