@@ -1,6 +1,6 @@
 package:
-  name: openmm
-  version: 6.3
+  name: openmm-dev
+  version: !!str 7.0.0.dev0
 
 source:
   git_url: https://github.com/pandegroup/openmm.git
